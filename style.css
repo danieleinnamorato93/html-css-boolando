@@ -17,6 +17,13 @@ header {
     z-index: 1;
 }
 
+header a {
+    text-decoration-line: none;
+    color: white;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
 footer{
     background-color: black;
     min-height: 60px;
@@ -37,9 +44,20 @@ footer h5 {
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
+    align-items: center;
     min-height:65px ;
     min-width:100% ;
-    border: 2px dashed black;
+   
+}
+
+.logo-footer img {
+   height: 25px;
+
+}
+.icons {
+    font-size: 13px;
+    color: white;
+   
 }
 
 .container {
