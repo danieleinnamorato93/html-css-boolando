@@ -36,6 +36,7 @@ footer{
 footer h6 {
     color: white;
     margin: 0;
+    
 }
 footer h5 {
     color: white;
@@ -67,7 +68,6 @@ footer h5 {
     max-width:850px;
     min-height: 500px;
     margin: 100px auto;
-    border: 2px dashed blue;
 }
 .row {
     display: flex;
@@ -77,16 +77,37 @@ footer h5 {
 }
 .col {
     flex-basis: calc(100% / 3 - 20px / 3);
-    border: 2px dashed black;
     margin-bottom: 26px;
 }
 .card {
     min-height: 354px;
     min-width: 200px;
     position: relative;
+    overflow: hidden;
 }
     .card img {
         width: 100%;
+        height: 100%;
+    }
+
+    .first-img {
+        display: block;
+    }
+    .hover-img {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    
+    }
+
+    .card:hover .first-img {
+        display: none;
+    }
+    .card:hover .hover-img {
+        display: block;
     }
 .discount{
     height: 20px;
@@ -102,7 +123,7 @@ footer h5 {
     line-height: 20px;
 }
 .sostenibilità {
-    right: 55px;
+    right: 60px;
     position: absolute;
     background-color: darkgreen;
    height: 20px;
@@ -125,7 +146,7 @@ footer h5 {
     background-color: darkgreen;
     height: 20px;
     width: 50%;
-    bottom: 30px;
+    bottom: 20px;
     left: 0;
 
 }
@@ -142,9 +163,14 @@ footer h5 {
     position: absolute;
 }
 
+.card:hover .hearts {
+    color: red;
+    font-size: 30px;
+}
+
 .footer-flex-container-left {
     display: flex;
-    flex-direction: ;
+    
 
 
 }
@@ -156,4 +182,6 @@ footer h5 {
     border: 2px dashed white;
 }
 
+.ftr-left {
+    
 }
