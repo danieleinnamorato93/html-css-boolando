@@ -14,6 +14,7 @@ header {
     left: 0;
     box-shadow:  0px 0px 0px 1px #333333;
     margin-bottom: 15px;
+    z-index: 1;
 }
 
 .navbar-flex-container {
@@ -25,4 +26,55 @@ header {
     min-width:100% ;
     border: 2px dashed black;
 }
-.dn-uo-bm
+
+.container {
+    max-width:850px;
+    min-height: 500px;
+    margin: 100px auto;
+    border: 2px dashed blue;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.col {
+    flex-basis: calc(100% / 3 - 20px / 3);
+    border: 2px dashed black;
+}
+.card {
+    background-color: darkgray;
+    min-height:400px;
+    position: relative;
+}
+.discount{
+    height: 20px;
+    position: absolute;
+    background-color: red;
+    min-height: 15px;
+    width: 35px;
+    bottom: 30px;
+    left: 0;
+}
+.sostenibilità {
+    right: 50px;
+    position: absolute;
+    background-color: darkgreen;
+   height: 20px;
+    width: 50%;
+    bottom: 30px;
+    left: 0;
+}
+
+.hearts {
+    text-align: center;
+    font-size: 25px;
+    background-color: white;
+    color: black;
+    height: 35px;
+    width: 30px;
+    top: 10px;
+    right: 0;
+    position: absolute;
+}
